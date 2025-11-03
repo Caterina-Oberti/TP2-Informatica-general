@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cuestionario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="imagenes/system of a down.jfif" alt="logo" width="80"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Pagina Principal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="musica.html">Música</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="integrantes.html">Integrantes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="historia.html">Historia</a>
+        <li class="nav-item">
+           <li class="nav-item">
+          <a class="nav-link active" href="cuestionario.html">Cuestionario</a>
+        </li>
+          <a class="nav-link" href="contacto.html">Pagina de contacto</a>
+        <li class="nav-item">
+          <a class="nav-link" href="datos.html">Pagina de datos</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="juego-preguntas" class="quiz-container">
+<section class="quiz-container">
+  <h1>Cuestionario</h1>
+  <p>Bienvenido al cuestionario de System of a down, donde podrás poner a prueba tu conocimiento de la banda</p>
+
+  <div class="pregunta">
+    <h2 id="texto-pregunta">Aquí irá la pregunta...</h2>
+    <div class="opciones">
+      <button class="opcion">Respuesta 1</button>
+      <button class="opcion">Respuesta 2</button>
+      <button class="opcion">Respuesta 3</button>
+      <button class="opcion">Respuesta 4</button>
+    </div>
+  </div>
+
+  <div class="scoreboard">
+    <div class="panel">
+      <h2>Puntos</h2>
+      <div class="points" id="puntos-preguntas">0</div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="btn-primary" id="btn-siguiente">Siguiente Pregunta</button>
+    <button class="btn-ghost" id="btn-reiniciar-preguntas">Reiniciar</button>
+  </div>
+
+  <div class="message" id="mensaje-preguntas">Selecciona una respuesta para comenzar.</div>
+</section>
+<footer>
+  <p>Contactese <a href="contacto.html">aquí</a> para más información</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="cuestionario.js"></script>
+  </body>
+</html>
