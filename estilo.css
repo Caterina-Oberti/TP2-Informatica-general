@@ -1,0 +1,169 @@
+body {
+    background-color: black;
+}
+
+h1, h2, p, ul {
+    color: white;
+}
+
+footer {
+  color: black;
+}
+
+footer p {
+  color: white;
+}
+
+footer a{
+  color: white
+}
+
+footer a:hover {
+  color: gold
+}
+
+/* nav */
+
+.navbar {
+  background-color: #000 !important;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 400; 
+  transition: color 0.3s ease;
+}
+
+
+.navbar .nav-link:hover {
+  color: #f0c000 !important;
+}
+
+
+.navbar .nav-link.active {
+  color: #f0c000 !important; 
+  font-weight: 400; 
+}
+
+
+.navbar-brand {
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* contenedores */
+ .contenedor {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor > div {
+  flex: 1; 
+  margin: 0 10px;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 250px;
+}
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; 
+    align-items: stretch;
+  }
+
+  .contenedor > div {
+    margin-bottom: 15px;
+  }
+}
+.contenedor h2 {
+  margin-bottom: 50px; 
+}
+
+.btn-primary {
+  background-color: #ec2b3b !important; 
+  border-color: #e63946;
+}
+
+.btn-primary:hover {
+  background-color: gold !important; 
+  border-color: gold;
+  color: black;
+}
+
+/* formulario */
+.form-label{
+  color: white;
+}
+
+/* cuestionario */
+#juego-preguntas {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.pregunta {
+  margin: 20px auto;
+  max-width: 600px;
+  background: gray;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#texto-pregunta {
+  margin-bottom: 15px;
+}
+
+.opciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.opcion {
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.opcion:hover {
+  background: #ffd54f;
+}
+
+.correcta { background: green !important; color: white; }
+.incorrecta { background: red !important; color: white; }
+
+.points {
+  color: white;
+}
+
+#mensaje-preguntas {
+  color: white;
+}
+
+/* galería */
+.galeria {
+  text-align: center;
+}
+
+.galeria img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
